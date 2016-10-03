@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Odds Analyser</title>
+    </head>
+    <body>
+    
+    </body>
+<script type="text/javascript" src="parseResponse.js"> </script>
+
+<script type="text/javascript">
+
+var http = require("http");
+var fs = require("fs");
+
+
+http.get("http://xml.cdn.betclic.com/odds_fr.xml", function (res) {
+    var body = "";
+    res.on("data", function (chunck) {
+        body += chunck;
+    });
+
+    res.on("end", function () {
+        fs.writeFile("odds.xml", body);
+        readResponse();
+    });
+});
+
+</script>
+
+</html>

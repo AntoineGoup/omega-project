@@ -1,0 +1,17 @@
+{
+  "name": "odds-analyser",
+  "version": "0.0",
+  "main": "index.html",
+  "window": {
+    "frame": true,
+    "toolbar": false,
+    "icon": "",
+    "width": 700,
+    "height": 500,
+    "min-width": 700,
+    "max-width": 700,
+    "min-height": 500,
+    "max-height": 500
+
+  }
+}

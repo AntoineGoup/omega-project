@@ -1,21 +1,25 @@
+var championnats = {
 
+}
 
 function bc_get_data() {
-    var node_xml = require("xml2js").parseString;
+
 http.get("http://xml.cdn.betclic.com/odds_fr.xml", function (res) {
-    var body = "";
+    var data = "";
     res.on("data", function (chunck) {
-        body += chunck;
+        data += chunck;
     });
 
     res.on("end", function () {
-        alert(body);
-        node_xml(body, function (err, data) {
-            alert("ok");
-            console.dir(data);
-            alert(data.sports.$["file_date"]);
-        });
+        return data;
     });
 });
 
+}
+
+function bc_parse_data(str) {
+    parseString(str, function (err, data){
+        console.dir(data);
+        return data;
+    });
 }

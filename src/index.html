@@ -4,29 +4,15 @@
         <meta charset="utf-8" />
         <title>Odds Analyser</title>
     </head>
+    <script type="text/javascript">
+        var http = require("http");
+        var parseString = require("xml2js").parseString;
+    </script>
     <body>
-    
     </body>
-<script type="text/javascript" src="parseResponse.js"> </script>
-
-<script type="text/javascript">
-
-var http = require("http");
-var fs = require("fs");
-
-
-http.get("http://xml.cdn.betclic.com/odds_fr.xml", function (res) {
-    var body = "";
-    res.on("data", function (chunck) {
-        body += chunck;
-    });
-
-    res.on("end", function () {
-        fs.writeFile("odds.xml", body);
-        readResponse();
-    });
-});
-
-</script>
-
+    <script type="text/javascript" src="betclic.js"></script>
+    <script type="text/javascript">
+    var data = bc_get_data();
+    data = bc_parse_data(data);
+    </script>
 </html>

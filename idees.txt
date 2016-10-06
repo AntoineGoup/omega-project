@@ -3,11 +3,12 @@
 -prendre en compte P =  (1 - somme(1/Ci)) où Ci = cotes euro. des differentes equipes en jeu, P = proportion d'argent récupérée par le bookmaker, 
 1-P proportion d'argent redistribuée par le bookmaker
 
--essayer de répondre au pb classique du bookmaker suivant: je suis un bookmaker et j'ai eu acces à toutes les infos possibles avant une rencontre. D'apres ces infos, j'estime à 
-P1, P2 et P3 les probabilités de : victoire de l'équipe 1, match nul, victoire de l'equipe 2 respectivement. (P2 = 0 si le match nul n'est pas possible). 
+-essayer de répondre au pb classique du bookmaker suivant: je suis un bookmaker et j'ai eu acces à toutes les infos possibles avant une rencontre, y compris les côtes des autres bookmakers.
+D'apres ces infos, j'estime à P1, P2 et P3 les probabilités de : victoire de l'équipe 1, match nul, victoire de l'equipe 2 respectivement. (P2 = 0 si le match nul n'est pas possible). 
 Quelles sont les côtes européennes C1, C2 et C3 à fixer afin de maximiser mon bénéfice ? A quoi S1, S2, S3, somme totale de l'agent misée
 pour chaque choix par l'ensembe des parieurs, doit être égal pour cela ? Est ce que je dois espérer que S1=S2=S3 ? Si oui, comment dois-je réagir
 si ce n'est pas le cas ? Etude du "risque". 
+
 
 -Etudier et superposer les courbes de modifications d'une côte par un bookmaker de l'instant t=0 (mise en ligne du pari) jusqu'a t=début du match.
 En déduire la réactivité/comportement des bookmakers vis à vis du flux d'infos et de la somme deja pariée par les parieurs.

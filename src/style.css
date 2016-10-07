@@ -1,0 +1,42 @@
+body {
+    background-color:#ededed;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #262626;
+    border: none;
+    border-radius: 0%;
+}
+
+#brand {
+    color: white;
+}
+
+.navbar-toggle, .navbar-toggle span {
+    border-color: white;
+} 
+
+.jumbotron {
+    color: white;
+    margin-bottom: 0;
+    background-color: #251900;
+}
+
+.table-striped > tbody > tr:nth-child(2n + 1) > td {
+   background-color: #f8f6f6;
+   border-color: ;
+}
+
+table tr td {
+    text-align: center;
+}
+
+.navbar-collapse .navbar-nav .open .dropdown-menu>li>a,.navbar-collapse .navbar-nav .open .dropdown-menu {
+    color:#ffffff;
+    background-color: #262626;
+  }
+
+.dropdown-toggle {
+      color: white;
+  }

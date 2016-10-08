@@ -1,20 +1,37 @@
-Sports à suivre :
+// Would be interesting to check on championships with different timezones, and then compare the differencies in odds according to the difference between timezones.
 
-	- FOOTBALL
-		* Championnat brésilien
-		* Championnat USA
-		* Championnat chilien
+I suggest to give a couple of variables (x, y) to each championship. 
+x would be the UTC timezone of the championship.
+y would be the variable of the reference timezone.
+
+For now, the reference timezone is PARIS timezone: UTC +1 
+
+ex: 
+	(-3, 1) represent a timezone UTC -3 compared to Paris timezone
+	(-4, 1) represent a timezone UTC -4 compared to Paris timezone
+
+Then, we will be able to analyse the relevancy of each championship based on that couple of variables.
+// 
 
 
 
+Sports to track:
 
-
+	- SOCCER
+		* USA championship (NY timezone: UTC -4 => -5h difference with Paris) // socc_usa = (-4, -5)
+		* Brazilian championship (Rio de Janeiro Timezone: UTC -3 => -4h difference with Paris) socc_bra = (-3, -4)
+		* Chile championship (Santiago de Chile timezone: UTC -3 => -4h difference with Paris)
+		* Chinese championship (Beijin timezone: UTC +8 => +7h difference with Paris)
 
 	- BASKETBALL:
-		*NBA
-		*CHampionnat chinois
+		* NBA (NY timezone: UTC -4 => -4h difference with Paris)
+		* Chinese championship (Beijin timezone: UTC +8 => +7h difference with Paris)
+
+
 
 
 Compétitions à venir :
 
 	* EURO 2018 (loin)
+	* Winter Olympics Games in PyeongChang (2018)
+	
